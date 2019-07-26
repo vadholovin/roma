@@ -1,0 +1,92 @@
+extends template/main
+
+block variables
+  - var title = 'Новости'
+  - var pageClass = 'news-page'
+
+block content
+  .container-fluid
+    .row
+      .col-lg-6.col-sm-12.news__main-col
+        h2.section-title Последние новости
+
+        ul.news.news--current
+          li.news__item.news-item.news-item--current
+            figure.news-item__img
+              a(href="#")
+                img(src="static/images/content/news/img-1.jpg", alt="")
+                figcaption.news-item__img-caption
+                  | ИТОГИ ОПРОСА: Фанаты верят в спортсменов, но не верят в руководство
+            .news-item__text
+              h3.news-item__title
+                a(href="#")
+                  | ИТОГИ ОПРОСА: Фанаты верят в спортсменов, но не верят в руководство ФКР
+              .news-item__text-row
+                p.news-item__excerpt
+                  | Несколько дней назад в послесловии к Европейским играм 2019
+                  | мы размышляли о перспективах и реалиях российского каратэ. Там же был предложен опрос …
+                .news-item__meta
+                  span.news-item__date 13.07.2019
+              a.button.button--primary.button--more(href="#")
+                | Читать
+          li.news__item.news-item.news-item--current
+            figure.news-item__img
+              a(href="#")
+                img(src="static/images/content/news/img-1.jpg", alt="")
+                figcaption.news-item__img-caption
+                  | ИТОГИ ОПРОСА: Фанаты верят в спортсменов, но не верят в руководство
+            .news-item__text
+              h3.news-item__title
+                a(href="#")
+                  | ИТОГИ ОПРОСА: Фанаты верят в спортсменов, но не верят в руководство ФКР
+              .news-item__text-row
+                p.news-item__excerpt
+                  | Несколько дней назад в послесловии к Европейским играм 2019
+                  | мы размышляли о перспективах и реалиях российского каратэ. Там же был предложен опрос …
+                .news-item__meta
+                  span.news-item__date 13.07.2019
+              a.button.button--primary.button--more(href="#")
+                | Читать
+
+      .col-lg-6.col-sm-12.news__aside-col
+        h2.section-title Новости прошлой недели
+
+        ul.news.news--old
+          li.news__item.news-item.news-item--old
+            figure.news-item__img
+              a(href="#")
+                img(src="static/images/content/news/img-1.jpg", alt="")
+                figcaption.news-item__img-caption
+                  | ИТОГИ ОПРОСА: Фанаты верят в спортсменов, но не верят в руководство
+            .news-item__text
+              h3.news-item__title
+                a(href="#")
+                  | ИТОГИ ОПРОСА: Фанаты верят в спортсменов, но не верят в руководство ФКР
+              .news-item__text-row
+                p.news-item__excerpt
+                  | Несколько дней назад в послесловии к Европейским играм 2019
+                  | мы размышляли о перспективах и реалиях российского каратэ. Там же был предложен опрос …
+                .news-item__meta
+                  span.news-item__date 13.07.2019
+              a.button.button--primary.button--more(href="#")
+                | Читать
+          li.news__item.news-item.news-item--old
+            figure.news-item__img
+              a(href="#")
+                img(src="static/images/content/news/img-1.jpg", alt="")
+                figcaption.news-item__img-caption
+                  | ИТОГИ ОПРОСА: Фанаты верят в спортсменов, но не верят в руководство
+            .news-item__text
+              h3.news-item__title
+                a(href="#")
+                  | ИТОГИ ОПРОСА: Фанаты верят в спортсменов, но не верят в руководство ФКР
+              .news-item__text-row
+                p.news-item__excerpt
+                  | Несколько дней назад в послесловии к Европейским играм 2019
+                  | мы размышляли о перспективах и реалиях российского каратэ. Там же был предложен опрос …
+                .news-item__meta
+                  span.news-item__date 13.07.2019
+              a.button.button--primary.button--more(href="#")
+                | Читать
+
+

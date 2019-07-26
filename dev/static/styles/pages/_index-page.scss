@@ -1,0 +1,21 @@
+/*------------------------------------*\
+  #INDEX PAGE
+\*------------------------------------*/
+
+.index-page {
+  // display: flex;
+  // flex-direction: column;
+  // min-height: 100vh;
+
+  .menu__link {
+    color: #fff;
+  }
+
+  .header__contact-link {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

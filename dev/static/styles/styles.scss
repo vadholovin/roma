@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+
+@import 'abstracts/vars';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+@import 'vendor/bootstrap-grid';
+
+@import 'vendor-extensions/bootstrap';
+
+
+// @import 'base/fonts';
+@import 'vendor/normalize';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/helpers';
+
+@import 'layout/header';
+@import 'layout/content';
+@import 'layout/hero';
+@import 'layout/news';
+@import 'layout/post';
+@import 'layout/about';
+@import 'layout/footer';
+
+@import 'components/menu';
+@import 'components/button';
+// @import 'components/socials';
+@import 'components/breadcrumbs';
+@import 'components/titles';
+@import 'components/tabs';
+
+@import 'pages/index-page';
+
+

@@ -1,0 +1,24 @@
+extends template/main
+
+block variables
+  - var title = 'Галерея'
+  - var pageClass = 'gallery-page'
+
+block content
+  .container-fluid
+    .d-flex
+      h1.section-title Галерея
+
+      .gallery-tabs__nav.js-tabs-nav
+        button.gallery-tabs__nav-item.is-active(
+          data-tab-name="tab-1"
+        ) Фото
+        button.gallery-tabs__nav-item(
+          data-tab-name="tab-2"
+        ) Видео
+
+    .gallery-tabs__content
+      include pages/gallery/gallery-img-tab
+      include pages/gallery/gallery-video-tab
+
+

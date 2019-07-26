@@ -1,0 +1,47 @@
+.icon {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.icon-arrow-left {
+    width: 106px;
+    height: 71px;
+    background-position: -3px -3px;
+}
+
+.icon-arrow-right {
+    width: 72px;
+    height: 49px;
+    background-position: -115px -3px;
+}
+
+.icon-chevron-down {
+    width: 77px;
+    height: 47px;
+    background-position: -193px -3px;
+}
+
+.icon-play-button {
+    width: 180px;
+    height: 180px;
+    background-position: -3px -80px;
+}
+
+.icon-telegram {
+    width: 96px;
+    height: 96px;
+    background-position: -189px -58px;
+}
+
+.icon-vk {
+    width: 96px;
+    height: 96px;
+    background-position: -189px -160px;
+}
+
+.icon-whatsapp {
+    width: 96px;
+    height: 96px;
+    background-position: -291px -3px;
+}

@@ -1,0 +1,35 @@
+/*------------------------------------*\
+  #POST
+\*------------------------------------*/
+
+.post {
+  
+  &__heading {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    max-width: 940px;
+    margin-bottom: 16px;
+    font-family: $secondFont;
+    font-weight: bold;
+    font-size: rem(40);
+    line-height: 1.15;
+  }
+
+  &__meta {
+    font-weight: bold;
+  }
+
+}
+
+.post__text {
+
+  & > * {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

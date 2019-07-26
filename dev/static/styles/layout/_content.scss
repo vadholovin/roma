@@ -1,0 +1,24 @@
+/*------------------------------------*\
+  #CONTENT
+\*------------------------------------*/
+
+.content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .index-page & {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    background: #000 url(../images/general/bg-index-opt.png) no-repeat 50% 50%/cover;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-page & {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+}

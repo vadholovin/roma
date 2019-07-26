@@ -1,0 +1,71 @@
+extends template/main
+
+block variables
+  - var title = 'Достижения'
+  - var pageClass = 'awards-page'
+
+block content
+  .container-fluid
+    h1.section-title Достижения
+
+    .row.awards-tabs
+      .col-lg-2.awards-col--aside
+        ul.awards-tabs__nav.js-tabs-nav
+          li.awards-tabs__nav-item.is-active(
+            data-tab-name="tab-1"
+          ) 2005 - 2008
+          li.awards-tabs__nav-item(
+            data-tab-name="tab-2"
+          ) 2010
+          li.awards-tabs__nav-item(
+            data-tab-name="tab-3"
+          ) 2011
+          li.awards-tabs__nav-item(
+            data-tab-name="tab-4"
+          ) 2012
+          li.awards-tabs__nav-item(
+            data-tab-name="tab-5"
+          ) 2013
+          li.awards-tabs__nav-item(
+            data-tab-name="tab-6"
+          ) 2014
+          li.awards-tabs__nav-item(
+            data-tab-name="tab-7"
+          ) 2015
+          li.awards-tabs__nav-item(
+            data-tab-name="tab-8"
+          ) 2016
+          li.awards-tabs__nav-item(
+            data-tab-name="tab-9"
+          ) 2017
+          li.awards-tabs__nav-item(
+            data-tab-name="tab-10"
+          ) 2018
+          li.awards-tabs__nav-item(
+            data-tab-name="tab-11"
+          ) 2019
+
+      .col-lg-10.awards-col--main
+        .awards-tabs__content
+          .awards-tab.tab.tab-1.is-active
+            include pages/awards/awards-tab
+          .awards-tab.tab.tab-2
+            include pages/awards/awards-tab
+          .awards-tab.tab.tab-3
+            include pages/awards/awards-tab
+          .awards-tab.tab.tab-4
+            include pages/awards/awards-tab
+          .awards-tab.tab.tab-5
+            include pages/awards/awards-tab
+          .awards-tab.tab.tab-6
+            include pages/awards/awards-tab
+          .awards-tab.tab.tab-7
+            include pages/awards/awards-tab
+          .awards-tab.tab.tab-8
+            include pages/awards/awards-tab
+          .awards-tab.tab.tab-9
+            include pages/awards/awards-tab
+          .awards-tab.tab.tab-10
+            include pages/awards/awards-tab
+          .awards-tab.tab.tab-11
+            include pages/awards/awards-tab

@@ -1,0 +1,24 @@
+/*------------------------------------*\
+  #BREADCRUMBS
+\*------------------------------------*/
+
+.breadcrumbs {
+  margin-bottom: 36px;
+  font-size: 0;
+
+  &__item,
+  &__divider {
+    display: inline-block;
+    vertical-align: baseline;
+    font-family: $secondFont;
+    font-size: rem(24);
+    color: inherit;
+  }
+
+  &__item {
+
+    &--active {
+      color: $highlight;
+    }
+  }
+}

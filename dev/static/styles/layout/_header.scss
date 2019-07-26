@@ -1,0 +1,37 @@
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.header {
+  border-bottom: 1px solid $tundora;
+  background-color: #fff;
+
+  .index-page & {
+    border: 0;
+    background-color: #000;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  &__menu {
+    margin-right: auto;
+  }
+
+  &__contact-link {
+    font-weight: bold;
+    font-size: rem(32);
+    line-height: 1.15;
+
+    &:focus {
+      outline: 0;
+      opacity: 0.65;
+    }
+  }
+}

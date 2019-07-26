@@ -1,0 +1,32 @@
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+.footer {
+  background-color: $tundora;
+
+  .index-page & {
+    margin-top: -100px;
+    background-color: transparent;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__contact,
+  &__date {
+    font-weight: bold;
+    font-size: rem(24);
+    color: #fff;
+  }
+
+  &__contact {
+    margin-right: auto;
+  }
+}

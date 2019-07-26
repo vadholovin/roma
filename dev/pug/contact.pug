@@ -1,0 +1,35 @@
+extends template/main
+
+block variables
+  - var title = 'Контакты'
+  - var pageClass = 'contact-page page-fill-height'
+
+block content
+  .container-fluid
+    h1.section-title Контакты
+      .contact__content
+        .contact__img
+          img(src="static/images/content/contact/img-1.jpg", alt="")
+        a.contact__phone(href="tel:")
+        a.contact__email(href="mailto:")
+        .contact__socials.socials
+          a.socials__item.socials__item--vk(
+            href="#",
+            title="ВКонтакте",
+            rel="noopener",
+            target="_blank"
+          )
+          a.socials__item.socials__item--whatsapp(
+            href="#",
+            title="Whatsapp",
+            rel="noopener",
+            target="_blank"
+          )
+          a.socials__item.socials__item--telegram(
+            href="#",
+            title="Telegram",
+            rel="noopener",
+            target="_blank"
+          )
+
+
