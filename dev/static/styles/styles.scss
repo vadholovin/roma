@@ -8,8 +8,6 @@
 
 @import 'vendor-extensions/bootstrap';
 
-
-// @import 'base/fonts';
 @import 'vendor/normalize';
 @import 'base/base';
 @import 'base/typography';
@@ -20,12 +18,15 @@
 @import 'layout/hero';
 @import 'layout/news';
 @import 'layout/post';
+@import 'layout/awards-tabs';
+@import 'layout/gallery-tabs';
 @import 'layout/about';
+@import 'layout/contact';
 @import 'layout/footer';
 
 @import 'components/menu';
 @import 'components/button';
-// @import 'components/socials';
+@import 'components/socials';
 @import 'components/breadcrumbs';
 @import 'components/titles';
 @import 'components/tabs';

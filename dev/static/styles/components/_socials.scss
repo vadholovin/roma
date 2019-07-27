@@ -3,24 +3,41 @@
 \*------------------------------------*/
 
 .socials {
-  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & > * {
+    margin-right: 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
-.social {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 38px;
-  height: 38px;
-  border: 1px solid #30343f;
-  border-radius: 50%;
-  transition: border-color 0.25s;
+.socials__item {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../images/icons/spritesheet.png);
+  background-repeat: no-repeat;
+  background-size: 128px 86.3333334px;
+  transition: opacity 0.25s;
 
-  &:not(:last-child) {
-    margin-right: 20px;
+  &--vk {
+    background-position: -62px -52px;
+  }
+
+  &--whatsapp {
+    background-position: -95px -1px;
+  }
+
+  &--telegram {
+    background-position: -62px -18px;
   }
 
   &:hover {
-    border-color: $orange;
+    opacity: 0.8;
   }
 }

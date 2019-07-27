@@ -4,8 +4,40 @@
 
 .contact {
 
-
   &__content {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__phone {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: rem(40);
+    line-height: 1.15;
+    color: $highlight;
+
+    &:hover {
+      color: $highlight;
+    }
+  }
+
+  &__email {
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: rem(24);
+    line-height: 1.15;
   }
 }

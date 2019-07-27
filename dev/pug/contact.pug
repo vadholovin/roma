@@ -7,29 +7,34 @@ block variables
 block content
   .container-fluid
     h1.section-title Контакты
-      .contact__content
-        .contact__img
-          img(src="static/images/content/contact/img-1.jpg", alt="")
-        a.contact__phone(href="tel:")
-        a.contact__email(href="mailto:")
-        .contact__socials.socials
-          a.socials__item.socials__item--vk(
-            href="#",
-            title="ВКонтакте",
-            rel="noopener",
-            target="_blank"
-          )
-          a.socials__item.socials__item--whatsapp(
-            href="#",
-            title="Whatsapp",
-            rel="noopener",
-            target="_blank"
-          )
-          a.socials__item.socials__item--telegram(
-            href="#",
-            title="Telegram",
-            rel="noopener",
-            target="_blank"
-          )
+  
+    .contact__content
+      .contact__img
+        img(src="static/images/content/contact/img-1.jpg", alt="")
+      a.contact__phone(href="tel:+79999789898")
+        | +7 (999) 978 98 98
+      span.contact__email E-mail:
+        |
+        |
+        a.contact__email-link(href="mailto:mail@mail.com") mail@mail.com
+      .contact__socials.socials
+        a.socials__item.socials__item--vk(
+          href="#",
+          title="ВКонтакте",
+          rel="noopener",
+          target="_blank"
+        )
+        a.socials__item.socials__item--whatsapp(
+          href="#",
+          title="Whatsapp",
+          rel="noopener",
+          target="_blank"
+        )
+        a.socials__item.socials__item--telegram(
+          href="#",
+          title="Telegram",
+          rel="noopener",
+          target="_blank"
+        )
 
 
