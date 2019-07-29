@@ -9,8 +9,10 @@ block content
     h1.section-title Достижения
 
     .row.awards-tabs
-      .col-lg-2.awards-col--aside
-        .awards-tabs__nav-wapper
+      .col-md-3.col-xl-2.awards-col--aside
+        .awards-tabs__nav-wrapper.clearfix
+          span.awards-tabs__nav-value.js-tabs-nav-value 2005 - 2008
+          button.awards-tabs__nav-btn.js-tabs-nav-toggler
           .awards-tabs__nav.js-tabs-nav
             a.awards-tabs__nav-item.is-active(
               href="#",
@@ -57,7 +59,7 @@ block content
               data-tab-name="tab-11"
             ) 2019
 
-      .col-lg-10.awards-col--main
+      .col-md-9.col-xl-10.awards-col--main
         .awards-tabs__content
           .awards-tab.tab.tab-1.is-active
             include pages/awards/awards-tab-1

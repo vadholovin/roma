@@ -1,11 +1,12 @@
 extends template/main
 
 block variables
-  - var title = 'Новости'
+  - var title = 'Итоги опроса'
   - var pageClass = 'post-page'
 
 block content
   .container-fluid
+    a.link-back.link-back--post(href="news.html")
     .breadcrumbs
       .breadcrumbs__item
         a.breadcrumbs__title(href='news.html') Новости

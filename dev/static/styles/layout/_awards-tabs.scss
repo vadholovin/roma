@@ -12,17 +12,86 @@
 .awards-col {
 
   &--aside {
-    padding-top: 90px;
-    border-right: 1px solid #000;
+
+    @media (min-width: 768px) {
+      padding-top: 90px;
+      border-right: 1px solid #000;
+    }
   }
 
   &--main {
-    padding-left: 40px;
+
+    @media (min-width: 768px) {
+      padding-left: 40px;
+    }
+  }
+}
+
+.awards-tabs__nav-wrapper {
+  position: relative;
+  margin-bottom: 24px;
+  
+  @media (max-width: 767.98px) {
+    padding: 8px 16px;
+    border: 1px solid #979797;
+    border-radius: 4px;
   }
 }
 
 .awards-tabs__nav {
   text-align: center;
+  display: block;
+
+  @media (max-width: 767.98px) {
+    position: absolute;
+    top: 101%;
+    left: 0;
+    width: 100%;
+    padding: 20px 15px;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    display: none;
+  }
+
+  &-value {
+    float: left;
+    font-size: rem(24);
+    line-height: 1.15;
+    font-weight: bold;
+    color: $highlight;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &-btn {
+    float: right;
+    padding: 6px 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    outline: 0;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 26px;
+      height: 16px;
+      background-image: url(../images/icons/spritesheet.png);
+      background-repeat: no-repeat;
+      background-position: -62px -1px;
+      background-size: 128px 86px;
+    }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 
   &-item {
     display: block;
@@ -48,9 +117,15 @@
   }
 
   &__title.awards-tab__title {
-    margin-bottom: 44px;
+    margin-bottom: 24px;
     font-weight: bold;
     font-size: rem(24);
+    text-align: center;
+
+    @media (min-width: 768px) {
+      margin-bottom: 44px;
+      text-align: left;
+    }
   }
 
   p {

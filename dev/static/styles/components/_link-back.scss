@@ -1,0 +1,22 @@
+/*------------------------------------*\
+  #LINK-BACK
+\*------------------------------------*/
+
+.link-back {
+  display: inline-block;
+  width: 36px;
+  height: 24px;
+  background-position: -1px -1px;
+  background-image: url(../images/icons/spritesheet.png);
+  background-repeat: no-repeat;
+  background-size: 128px 86px;
+
+  &--post {
+    margin-top: 10px;
+    margin-bottom: 18px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}

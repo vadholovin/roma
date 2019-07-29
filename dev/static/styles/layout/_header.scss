@@ -3,8 +3,20 @@
 \*------------------------------------*/
 
 .header {
-  border-bottom: 1px solid $tundora;
+  position: relative;
   background-color: #fff;
+
+  &--scrollable {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  @media (min-width: 992px) {
+    border-bottom: 1px solid $tundora;
+  }
 
   .index-page & {
     border: 0;
@@ -15,23 +27,28 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    height: 100px;
+    height: 60px;
     padding-top: 12px;
     padding-bottom: 12px;
-  }
 
-  &__menu {
-    margin-right: auto;
+    @media (min-width: 992px) {
+      height: 100px;
+    }
   }
 
   &__contact-link {
+    margin-left: auto;
     font-weight: bold;
-    font-size: rem(32);
+    font-size: rem(24);
     line-height: 1.15;
 
     &:focus {
       outline: 0;
       opacity: 0.65;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: rem(32);
     }
   }
 }

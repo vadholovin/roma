@@ -13,12 +13,30 @@
     margin-bottom: 16px;
     font-family: $secondFont;
     font-weight: bold;
-    font-size: rem(40);
+    font-size: rem(18);
     line-height: 1.15;
+
+    @media (min-width: 576px) {
+      font-size: rem(24);
+    }
+    @media (min-width: 768px) {
+      font-size: rem(32);
+    }
+    @media (min-width: 992px) {
+      font-size: rem(40);
+    }
   }
 
   &__meta {
     font-weight: bold;
+  }
+
+  &__thumbnail {
+    margin-bottom: 20px;
+
+    @media (min-width: 992px) {
+      margin-bottom: 0;
+    }
   }
 
 }

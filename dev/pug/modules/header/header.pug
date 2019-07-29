@@ -9,5 +9,26 @@ header.header
         a.menu__link(href='about.html') О мне
         a.menu__link(href='contact.html') Контакты
 
+      button.hamburger.hamburger--spring(
+        type='button',
+        aria-label='Menu',
+        aria-controls='navigation'
+      )
+        span.hamburger-box
+          span.hamburger-inner
+
+
       a.header__contact-link(href="tel:+79999879898") +7 (999) 987 98 98
+  
+  .mobile-nav
+    .mobile-nav__overlay
+    .mobile-nav__content
+      .menu.menu--mobile
+        a.menu__link.is-current(href='index.html') Главная
+        a.menu__link(href='news.html') Новости
+        a.menu__link(href='gallery.html') Галерея
+        a.menu__link(href='awards.html') Достижения
+        a.menu__link(href='about.html') О мне
+        a.menu__link(href='contact.html') Контакты
+
         
